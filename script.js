@@ -32,7 +32,7 @@ function switchPlayer() {
 document.querySelector(".btn--roll").addEventListener('click', function roll() {
     if(gamePlaying) {
         let dice = Math.trunc(Math.random() * 6) +1;
-        document.querySelector(".dice").src = `../Dice Game/Image/dice-${dice}.png`;
+        document.querySelector(".dice").src = `./Image/dice-${dice}.png`;
         console.log(dice);
         if(dice != 1) {
             currentScore += dice;
